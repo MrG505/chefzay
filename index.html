@@ -1,175 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chef Zay | Private Chef Experience</title>
-
-<style>
-  * { margin:0; padding:0; box-sizing:border-box; }
-  body { font-family: 'Arial', sans-serif; background:#000; color:#fff; }
-  a { text-decoration:none; color:#00aaff; }
-
-  /* HERO */
-  .hero {
-    height:100vh;
-    background:#000 url('Chefzaylogo.PNG') center center no-repeat;
-    background-size:contain;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:0 20px;
-  }
-  .hero h1 {
-    font-size:5vw;
-    color:#00aaff;
-    margin-bottom:20px;
-  }
-  .hero p {
-    font-size:1.5vw;
-    max-width:600px;
-    margin-bottom:30px;
-    color:#ddd;
-  }
-  .hero .button {
-    padding:15px 30px;
-    background:#00aaff;
-    color:#000;
-    font-weight:bold;
-    border-radius:6px;
-    font-size:1vw;
-  }
-
-  /* SECTIONS */
-  section {
-    padding:100px 20px;
-    text-align:center;
-  }
-  section h2 {
-    font-size:3vw;
-    color:#00aaff;
-    margin-bottom:20px;
-  }
-  section p {
-    font-size:1.5vw;
-    max-width:700px;
-    margin:20px auto;
-    color:#ddd;
-  }
-
-  /* REVIEWS */
-  .review {
-    margin:40px auto;
-    max-width:700px;
-    font-style:italic;
-    color:#ddd;
-  }
-  .review-name {
-    margin-top:10px;
-    color:#00aaff;
-    font-weight:bold;
-  }
-
-  /* BOOKING FORM */
-  form {
-    display:flex;
-    flex-direction:column;
-    max-width:500px;
-    margin:auto;
-  }
-  input, textarea, button {
-    margin:10px 0;
-    padding:12px;
-    border-radius:6px;
-    border:none;
-    font-size:1vw;
-  }
-  button {
-    background:#00aaff;
-    color:#000;
-    font-weight:bold;
-    cursor:pointer;
-  }
-
-  /* FOOTER */
-  footer {
-    text-align:center;
-    padding:50px 0;
-    color:#888;
-    font-size:0.9vw;
-  }
-
-  @media (max-width: 768px) {
-    .hero h1 { font-size:10vw; }
-    .hero p, section p, input, textarea, button { font-size:3vw; }
-    .hero .button { font-size:3vw; padding:12px 24px; }
-  }
-</style>
+  <title>ChefZay - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <!-- HERO -->
-  <div class="hero">
-    <h1>Chef Zay</h1>
-    <p>Private Chef Experiences in New Mexico • Steak-Focused • Scratch-Made • Locally Sourced</p>
-    <a href="#booking" class="button">Book Your Experience</a>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="menu.html">Menu</a>
+  <a href="booking.html">Booking</a>
+</nav>
+
+<section class="hero">
+  <div class="overlay"></div>
+  <div class="hero-content">
+    <h1>ChefZay</h1>
+    <p>Private Dining Experience</p>
+    <a class="btn" href="booking.html">Book Now</a>
   </div>
+</section>
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Chef Zay</h2>
-    <p>Cooking since age 5, trained with family and culinary classes, I specialize in steak and real food from scratch. Every experience is custom designed to bring people together through bold flavors and New Mexico tradition.</p>
-  </section>
-
-  <!-- SIGNATURE -->
-  <section id="signature">
-    <h2>Signature Experience</h2>
-    <p>Private in-home steak-focused dining with scratch-made sides, locally sourced ingredients, and a bold, real-food approach.</p>
-  </section>
-
-  <!-- SOURCING -->
-  <section id="sourcing">
-    <h2>Ingredient Sourcing</h2>
-    <p>Sweet Mercy Farms • MAS Cattle Company • JX Ranch • Nelson’s Butchery (ABQ)</p>
-  </section>
-
-  <!-- REVIEWS -->
-  <section id="reviews">
-    <h2>Client Reviews</h2>
-
-    <div class="review">
-      <p>Delicious food and an amazing steak experience. Everything was cooked perfectly and felt very personal.</p>
-      <div class="review-name">— Tyler Leeper</div>
-    </div>
-
-    <div class="review">
-      <p>Really great flavors and everything was made from scratch. The steak was definitely the highlight.</p>
-      <div class="review-name">— Joshua Tavasci</div>
-    </div>
-
-    <div class="review">
-      <p>One of the best home dining experiences I’ve had. Simple, clean, and really good food.</p>
-      <div class="review-name">— Guiliana Fonseca</div>
-    </div>
-  </section>
-
-  <!-- BOOKING -->
-  <section id="booking">
-    <h2>Book Your Experience</h2>
-    <form action="https://formspree.io/f/mpqedzwn" method="POST">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="6" placeholder="Event details (date, location, guests, food ideas)" required></textarea>
-      <button type="submit">Send Booking Request</button>
-    </form>
-  </section>
-
-  <footer>
-    © Chef Zay | Private Chef Experiences
-  </footer>
+<section>
+  <h2>Welcome</h2>
+  <div class="card">
+    Luxury private chef experiences for your events, dinners, and special moments.
+  </div>
+</section>
 
 </body>
 </html>
