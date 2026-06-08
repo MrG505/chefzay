@@ -1,48 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@500;600&display=swap');
 
-:root {
-  --bg: #0b0f1a;
-  --card: #11182a;
-  --text: #e6e9f2;
-  --muted: #a0a8c0;
-  --accent: #2f6bff;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
+  margin: 0;
   font-family: 'Inter', sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.6;
+  background: #0b0f1a;
+  color: #e6e9f2;
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 18px 40px;
   background: rgba(10, 14, 25, 0.8);
   backdrop-filter: blur(10px);
-  position: sticky;
-  top: 0;
   border-bottom: 1px solid rgba(47, 107, 255, 0.2);
 }
 
 nav a {
-  color: var(--text);
+  color: #e6e9f2;
   text-decoration: none;
-  margin: 0 12px;
+  margin-left: 15px;
   font-weight: 500;
 }
 
 nav a:hover {
-  color: var(--accent);
+  color: #2f6bff;
+}
+
+/* LOGO */
+.logo {
+  height: 55px;
 }
 
 /* HERO */
@@ -53,12 +42,12 @@ nav a:hover {
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 60px;
+  font-size: 55px;
+  margin-bottom: 10px;
 }
 
 .hero p {
-  color: var(--muted);
-  margin-top: 10px;
+  color: #a0a8c0;
   font-size: 18px;
 }
 
@@ -66,45 +55,35 @@ nav a:hover {
 .btn {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 24px;
-  background: var(--accent);
+  padding: 12px 22px;
+  background: #2f6bff;
   color: white;
-  border-radius: 10px;
   text-decoration: none;
-  transition: 0.3s;
+  border-radius: 10px;
 }
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 25px rgba(47,107,255,0.4);
 }
 
-/* SECTIONS */
+/* CONTAINER */
 .container {
-  max-width: 1100px;
+  max-width: 1000px;
   margin: auto;
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
-/* CARDS */
+/* CARD */
 .card {
-  background: var(--card);
+  background: #11182a;
   padding: 20px;
-  border-radius: 16px;
   margin: 15px 0;
-  border: 1px solid rgba(47, 107, 255, 0.15);
-  transition: 0.3s;
+  border-radius: 14px;
+  border: 1px solid rgba(47,107,255,0.15);
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0,0,0,0.4);
-}
-
-/* FOOTER */
 footer {
   text-align: center;
-  padding: 40px;
-  color: var(--muted);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  padding: 30px;
+  color: #a0a8c0;
 }
