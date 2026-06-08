@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery | Chef Zay</title>
+
+<style>
+  body { margin:0; background:#000; color:#fff; font-family:Arial; }
+  nav { text-align:center; padding:20px; }
+  a { color:#00aaff; margin:10px; text-decoration:none; }
+
+  h1 { text-align:center; color:#00aaff; margin:20px 0; }
+
+  .grid {
+    column-count:3;
+    column-gap:10px;
+    padding:20px;
+  }
+
+  .grid img {
+    width:100%;
+    margin-bottom:10px;
+    border-radius:10px;
+  }
+
+  @media(max-width:800px){
+    .grid { column-count:2; }
+  }
+
+  @media(max-width:500px){
+    .grid { column-count:1; }
+  }
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="menu.html">Menu</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Book</a>
+</nav>
+
+<h1>Food Gallery</h1>
+
+<div class="grid">
+
+<img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+<img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141">
+<img src="https://images.unsplash.com/photo-1544025162-d76694265947">
+<img src="https://images.unsplash.com/photo-1604908177522-040a0a1f8b9d">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<img src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba">
+
+</div>
+
+</body>
+</html>
