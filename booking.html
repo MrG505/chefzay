@@ -20,24 +20,28 @@
 
 <section class="hero">
   <h1>Booking</h1>
-  <p>Reserve your luxury dining experience</p>
+  <p>Reserve your experience</p>
 </section>
 
 <section class="container">
 
   <div class="card">
-    <h2>Private Chef Dinner</h2>
-    <p>Exclusive curated dining experience.</p>
-  </div>
 
-  <div class="card">
-    <h2>Events</h2>
-    <p>Luxury catering for special occasions.</p>
-  </div>
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
 
-  <div class="card">
-    <h2>Contact</h2>
-    <p>Email: booking@chefzay.com</p>
+      <input type="text" name="name" placeholder="Your Name" required
+        style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:none;">
+
+      <input type="email" name="email" placeholder="Your Email" required
+        style="width:100%;padding:12px;margin-bottom:10px;border-radius:8px;border:none;">
+
+      <textarea name="message" placeholder="Your Request" required
+        style="width:100%;padding:12px;height:120px;border-radius:8px;border:none;"></textarea>
+
+      <button class="btn" type="submit">Send Booking Request</button>
+
+    </form>
+
   </div>
 
 </section>
