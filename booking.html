@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Booking</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Booking | ChefZay</title>
+  <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="menu.html">Menu</a>
-  <a href="booking.html">Booking</a>
+  <div><strong>ChefZay</strong></div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="booking.html">Booking</a>
+  </div>
 </nav>
 
-<section>
-  <h1>Book ChefZay</h1>
+<section class="hero">
+  <h1>Booking</h1>
+  <p>Reserve your luxury dining experience</p>
+</section>
+
+<section class="container">
 
   <div class="card">
-
-    <form action="https://formspree.io/f/mpqedzwn" method="POST">
-
-      <input type="text" name="name" placeholder="Your Name" required>
-      <br><br>
-
-      <input type="email" name="email" placeholder="Your Email" required>
-      <br><br>
-
-      <input type="date" name="date" required>
-      <br><br>
-
-      <textarea name="message" placeholder="Event details" rows="5" required></textarea>
-      <br><br>
-
-      <button class="btn" type="submit">Send Booking Request</button>
-
-    </form>
-
+    <h2>Private Dinner</h2>
+    <p>Exclusive chef experience for special occasions.</p>
   </div>
+
+  <div class="card">
+    <h2>Group Events</h2>
+    <p>Luxury catering for events and celebrations.</p>
+  </div>
+
+  <div class="card">
+    <h2>Contact</h2>
+    <p>Email: booking@chefzay.com</p>
+  </div>
+
 </section>
+
+<footer>
+  © 2026 ChefZay
+</footer>
 
 </body>
 </html>
