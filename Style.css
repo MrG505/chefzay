@@ -3,8 +3,8 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #0b0f1a;
-  color: #e6e9f2;
+  background: #070a12;
+  color: #eaeefc;
 }
 
 /* NAV */
@@ -12,21 +12,22 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 40px;
-  background: rgba(10, 14, 25, 0.8);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(47, 107, 255, 0.2);
+  padding: 18px 50px;
+  background: rgba(10, 12, 25, 0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(60, 120, 255, 0.15);
 }
 
 nav a {
-  color: #e6e9f2;
+  color: #eaeefc;
   text-decoration: none;
-  margin-left: 15px;
-  font-weight: 500;
+  margin-left: 18px;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 
 nav a:hover {
-  color: #2f6bff;
+  color: #3c78ff;
 }
 
 /* LOGO */
@@ -36,54 +37,67 @@ nav a:hover {
 
 /* HERO */
 .hero {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  padding: 120px 20px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: 55px;
-  margin-bottom: 10px;
+  font-size: 64px;
+  margin: 0;
 }
 
 .hero p {
-  color: #a0a8c0;
-  font-size: 18px;
+  color: #a7b0d6;
+  margin-top: 10px;
 }
 
 /* BUTTON */
 .btn {
-  display: inline-block;
   margin-top: 20px;
-  padding: 12px 22px;
-  background: #2f6bff;
+  padding: 12px 26px;
+  background: linear-gradient(135deg, #2f6bff, #1c3fff);
   color: white;
+  border-radius: 12px;
   text-decoration: none;
-  border-radius: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
   transform: translateY(-3px);
 }
 
-/* CONTAINER */
+/* CONTENT */
 .container {
-  max-width: 1000px;
+  max-width: 900px;
   margin: auto;
   padding: 40px 20px;
 }
 
 /* CARD */
 .card {
-  background: #11182a;
-  padding: 20px;
-  margin: 15px 0;
-  border-radius: 14px;
-  border: 1px solid rgba(47,107,255,0.15);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(60,120,255,0.15);
+  border-radius: 16px;
+  padding: 25px;
+  margin-bottom: 20px;
 }
 
+/* INPUTS */
+input, textarea {
+  background: rgba(255,255,255,0.05);
+  color: white;
+  border: 1px solid rgba(60,120,255,0.2);
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 30px;
-  color: #a0a8c0;
+  color: #6f7aa8;
 }
