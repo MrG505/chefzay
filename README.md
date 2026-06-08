@@ -1,18 +1,12 @@
 # ChefZay Website
 
-A luxury chef brand website built with HTML + CSS.
-
-## Features
-- Dark luxury theme (black + blue)
-- Responsive layout
-- Multiple pages (Home, Menu, About, Booking)
-- Modern UI styling
+A modern luxury chef brand website built with HTML and CSS.
 
 ## Pages
-- index.html
-- menu.html
-- about.html
-- booking.html
+- Home
+- Menu
+- About
+- Booking
 
 ## Style
-Uses custom CSS with Google Fonts (Inter + Playfair Display)
+Black + luxury blue theme with modern typography.
