@@ -2,115 +2,182 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chef Zay | Private Chef Services</title>
-
   <style>
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #000000;
-      color: #ffffff;
+      background-color: #000;
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
     }
 
     .container {
       max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+      padding: 20px;
     }
 
-    h1 {
-      color: #00aaff;
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 40px 20px 60px 20px;
+    }
+
+    .hero img {
+      width: 160px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
       font-size: 48px;
-      margin-bottom: 5px;
+      color: #00aaff;
+      margin: 10px 0;
     }
 
-    h2 {
-      color: #ffffff;
-      font-weight: normal;
+    .hero p {
+      color: #fff;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero a.button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00aaff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .hero a.button:hover {
+      background: #0088cc;
+    }
+
+    /* CARDS */
+    .card {
+      background: #111;
+      border-left: 4px solid #00aaff;
+      border-radius: 8px;
+      padding: 25px;
+      margin: 25px 0;
+    }
+
+    .card h2 {
+      color: #00aaff;
       margin-top: 0;
     }
 
-    .tagline {
+    .card h3 {
       color: #00aaff;
-      margin-bottom: 30px;
-      font-size: 18px;
+      margin-top: 5px;
     }
 
-    .card {
-      background: #111111;
-      border-left: 4px solid #00aaff;
-      padding: 20px;
-      margin: 20px 0;
-      border-radius: 8px;
+    .card p {
+      color: #fff;
+      margin: 10px 0;
     }
 
-    a.button {
-      display: inline-block;
+    /* FORM */
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 15px 0;
+      border: none;
+      border-radius: 4px;
+    }
+
+    button {
       background: #00aaff;
-      color: #000;
+      color: black;
       padding: 12px 20px;
-      text-decoration: none;
       font-weight: bold;
+      border: none;
       border-radius: 6px;
-      margin-top: 10px;
+      cursor: pointer;
     }
 
-    a.button:hover {
+    button:hover {
       background: #0088cc;
     }
 
     footer {
       text-align: center;
-      margin-top: 50px;
+      margin: 50px 0 20px 0;
       color: #888;
       font-size: 14px;
     }
+
+    @media(max-width:600px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+      .hero p {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
-
 <body>
 
 <div class="container">
 
-  <h1>Chef Zay</h1>
-  <p class="tagline">Real Food • Scratch Made • New Mexico Inspired</p>
-
-  <div class="card">
-    <h2>About Me</h2>
-    <p>
-      My name is Isaiah Gallegos. I’ve been cooking since I was 5 years old,
-      learning from my mother, family, friends, and years of hands-on experience.
-    </p>
-    <p>
-      I specialize in natural, real-food cooking made from scratch whenever possible.
-      My focus is premium steaks, New Mexico-inspired dishes, and custom meals built
-      around high-quality ingredients.
-    </p>
-    <p>
-      I believe great food starts with real ingredients, and I prioritize local,
-      natural, and organic products whenever available.
-    </p>
+  <!-- HERO SECTION -->
+  <div class="hero">
+    <img src="Chefzaylogo.PNG" alt="Chef Zay Logo">
+    <h1>Chef Zay</h1>
+    <p>Real Food • Scratch Made • New Mexico Inspired • Steak Specialist</p>
+    <a href="#booking" class="button">Request Booking</a>
   </div>
 
+  <!-- SIGNATURE EXPERIENCE -->
   <div class="card">
-    <div class="card">
-  <h2>Signature Experience</h2>
-  <h3 style="color:#00aaff;">Chef Zay Steak Experience</h3>
+    <h2>Signature Experience</h2>
+    <h3>Chef Zay Steak Experience</h3>
+    <p>A private, in-home dining experience focused on premium steak, scratch-made sides, and bold New Mexico-inspired flavors.</p>
+    <p>Every experience is customized — from seasoning and cooking style to sides and plating. Perfect for date nights, celebrations, and unforgettable meals.</p>
+    <p style="color:#00aaff;">Limited availability • Booking required in advance</p>
+  </div>
 
-  <p>
-    A private, in-home dining experience focused on premium steak, scratch-made sides,
-    and bold New Mexico-inspired flavor.
-  </p>
+  <!-- ABOUT ME -->
+  <div class="card">
+    <h2>About Me</h2>
+    <p>My name is Isaiah Gallegos. I’ve been cooking since I was 5 years old, learning from my mother, family, and years of hands-on experience.</p>
+    <p>I specialize in natural, real-food cooking made from scratch whenever possible. My focus is premium steaks, New Mexico-inspired dishes, and custom meals built around high-quality ingredients.</p>
+    <p>Every meal is prepared with care, attention to detail, and respect for quality ingredients.</p>
+  </div>
 
-  <p>
-    Every experience is customized — from seasoning and cooking style to sides and plating.
-    Built for date nights, celebrations, and unforgettable meals.
-  </p>
+  <!-- COOKING PHILOSOPHY -->
+  <div class="card">
+    <h2>My Cooking Philosophy</h2>
+    <p>My approach to food is simple: real ingredients, minimal processing, and bold natural flavor.</p>
+    <p>I focus on high-quality proteins like grass-fed beef, pasture-raised poultry, eggs, and seafood, combined with fresh fruits, natural fats, and seasonal ingredients.</p>
+    <p>I prioritize locally sourced, organic, and clean ingredients whenever possible, creating meals that are both nourishing and satisfying.</p>
+    <p style="color:#00aaff;">The goal is simple: food that tastes amazing and makes you feel amazing.</p>
+  </div>
 
-  <p style="color:#00aaff;">
-    Limited availability • Booking required in advance
-  </p>
-</div>
+  <!-- INGREDIENT SOURCING -->
+  <div class="card">
+    <h2>Where I Source My Ingredients</h2>
+    <p>I prioritize sourcing ingredients from trusted local farms, ranches, and butchers in New Mexico.</p>
+    <p><strong>Farms & ranches:</strong></p>
+    <p>
+      • Sweet Mercy Farms — 100% grass-fed and finished beef, local shares & bulk boxes<br>
+      • MAS Cattle Company LLC — ranch-direct bulk beef<br>
+      • JX Ranch — grass-fed/finished beef from regional ranch operations
+    </p>
+    <p><strong>Trusted local butcher:</strong></p>
+    <p>• Nelson’s Butchery (Albuquerque) — quality meats, fresh cuts, and specialty orders</p>
+    <p>This network allows me to cook with clean, high-quality ingredients and stay connected to local New Mexico food culture.</p>
+  </div>
+
+  <!-- SERVICES -->
+  <div class="card">
     <h2>Services</h2>
     <p>• Private Chef Dinners</p>
     <p>• Steak Experiences</p>
@@ -118,120 +185,23 @@
     <p>• Custom Menus</p>
   </div>
 
-  <div class="card">
-    <div class="card">
-  <h2>Booking Request</h2>
-
-  <form action="https://formspree.io/f/mpqedzwn" method="POST">
-
-    <p>
-      Name:<br>
-      <input type="text" name="name" required style="width:100%; padding:10px;">
-    </p>
-
-    <p>
-      Email:<br>
-      <input type="email" name="email" required style="width:100%; padding:10px;">
-    </p>
-
-    <p>
-      Event Details (date, location, number of guests, food ideas):<br>
-      <textarea name="message" rows="6" required style="width:100%; padding:10px;"></textarea>
-    </p>
-
-    <button type="submit" style="background:#00aaff; color:black; padding:12px 20px; border:none; font-weight:bold; cursor:pointer;">
-      Send Booking Request
-    </button>
-
-  </form>
-</div>
-
-  <div class="card">
-    <div class="card">
-  <h2>My Cooking Philosophy</h2>
-
-  <p>
-    My approach to food is simple: real ingredients, minimal processing, and bold natural flavor.
-  </p>
-
-  <p>
-    I focus on high-quality proteins like grass-fed beef, pasture-raised poultry, eggs,
-    and seafood, combined with fresh fruits, natural fats, and seasonal ingredients.
-  </p>
-
-  <p>
-    Whenever possible, I prioritize locally sourced, organic, and clean ingredients
-    to create meals that feel both nourishing and satisfying.
-  </p>
-
-  <p>
-    I avoid heavily processed foods and seed oils, and instead build flavor through
-    traditional cooking methods, animal fats, herbs, and whole ingredients.
-  </p>
-
-  <p style="color:#00aaff;">
-    The goal is simple: food that tastes good and makes you feel good.
-  </p>
-</div>
-    <div class="card">
-  <h2>About My Cooking</h2>
-
-  <p>
-    I’ve been cooking since I was 5 years old, learning from my mother, family,
-    and years of hands-on experience.
-  </p>
-
-  <p>
-    My style blends New Mexico home cooking, steak-focused technique,
-    and a modern approach to real-food ingredients.
-  </p>
-
-  <p>
-    Every meal is prepared with care, attention to detail, and respect for quality ingredients.
-  </p>
-</div>
-    <div class="card">
-  <h2>Where I Source My Ingredients</h2>
-
-  <p>
-    I prioritize sourcing ingredients from trusted local farms, ranches, and butchers in New Mexico.
-    My goal is to use high-quality meats and ingredients whenever possible, depending on availability.
-  </p>
-
-  <p><strong>Farms & ranches I work with include:</strong></p>
-
-  <p>
-    • Sweet Mercy Farms — 100% grass-fed and finished beef, local shares and bulk boxes<br><br>
-
-    • MAS Cattle Company LLC — ranch-direct bulk beef sourcing<br><br>
-
-    • JX Ranch — New Mexico grass-fed/finished beef from regional ranch operations
-  </p>
-
-  <p><strong>Trusted local butcher:</strong></p>
-
-  <p>
-    • Nelson’s Butchery (Albuquerque) — well-known local butcher shop offering quality meats,
-    ideal for fresh cuts, specialty orders, and sourcing when working locally in NM
-  </p>
-
-  <p>
-    This network allows me to cook with clean, high-quality ingredients and stay connected
-    to local New Mexico food culture.
-  </p>
-</div>
-    <h2>Note</h2>
-    <p>
-      This is the beginning of my chef journey. Photos and menu updates will be added soon.
-    </p>
+  <!-- BOOKING FORM -->
+  <div class="card" id="booking">
+    <h2>Request Booking</h2>
+    <form action="https://formspree.io/f/mpqedzwn" method="POST">
+      <p>Name:<br><input type="text" name="name" required></p>
+      <p>Email:<br><input type="email" name="email" required></p>
+      <p>Event Details (date, location, guests, food ideas):<br><textarea name="message" rows="6" required></textarea></p>
+      <button type="submit">Send Booking Request</button>
+    </form>
   </div>
 
-  <footer>
-    © Chef Zay | Private Chef Services
-  </footer>
-
 </div>
-  <div class="card">
+
+<!-- FOOTER -->
+<footer>
+  © Chef Zay | Private Chef Services
+</footer>
 
 </body>
 </html>
