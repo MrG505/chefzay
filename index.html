@@ -1,46 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>ChefZay</title>
-  <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef Zay | Private Chef Albuquerque & New Mexico</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+    </style>
 </head>
-
 <body>
 
-<nav>
-  <img src="Chefzaylogo.PNG" class="logo">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Chefzaylogo.PNG" alt="Chef Zay Logo" style="height: 48px; width: auto;">
+            CHEF ZAY
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Book Now</a>
+        </div>
+    </nav>
 
-  <div>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="about.html">About</a>
-    <a href="booking.html">Booking</a>
-  </div>
-</nav>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Private Chef Experiences</h1>
+            <p class="tagline">Elevated steak-forward cuisine. Performance nutrition. Unforgettable dinners in New Mexico.</p>
+            <a href="booking.html" class="cta-button">Reserve Your Private Dinner</a>
+        </div>
+    </section>
 
-<section class="hero">
-  <h1>ChefZay</h1>
-  <p>Private chef specializing in bold steak-focused cuisine, crafted from whole foods and real ingredients.</p>
-  <a class="btn" href="booking.html">Book Private Dining</a>
-</section>
+    <!-- Philosophy -->
+    <section class="section">
+        <div class="text-center" style="max-width: 780px; margin: 0 auto;">
+            <h2>Precision. Craft. Performance.</h2>
+            <p style="font-size: 1.25rem; margin-top: 2rem; opacity: 0.85;">
+                Chef Zay delivers restaurant-quality, steak-centric private dining rooted in clean, high-protein whole food cooking. 
+                Every dish is prepared from scratch with exacting attention to flavor, texture, and nutritional impact.
+            </p>
+            <a href="Animal Base Diet Blue Print.pdf" target="_blank" style="color: var(--gold); margin-top: 2rem; display: inline-block; text-decoration: underline;">Download the Nutrition Philosophy →</a>
+        </div>
+    </section>
 
-<section class="container">
+    <!-- Services -->
+    <section class="section section-dark">
+        <div class="text-center">
+            <h2>Private Chef Services</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <h3>In-Home Private Dinners</h3>
+                <p style="margin: 1.5rem 0;">Multi-course tasting menus brought directly to your home, villa, or event space. Perfect for date nights, celebrations, and intimate gatherings.</p>
+                <strong style="color: var(--gold);">Starting at $225 per person</strong>
+            </div>
+            <div class="service-card">
+                <h3>Signature Steak Experiences</h3>
+                <p style="margin: 1.5rem 0;">Dry-aged ribeyes, wagyu, and chef’s choice cuts prepared with precision. Paired with elevated sides and wine recommendations.</p>
+                <strong style="color: var(--gold);">Signature offering</strong>
+            </div>
+            <div class="service-card">
+                <h3>Weekly Meal Prep</h3>
+                <p style="margin: 1.5rem 0;">High-performance meals designed for busy professionals and athletes. Consistent, chef-crafted nutrition delivered weekly.</p>
+                <strong style="color: var(--gold);">Custom plans available</strong>
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
-    <h2>Private Chef Services</h2>
-    <p>In-home or event-based private dining experiences built around high-quality meals made from scratch.</p>
-  </div>
+    <!-- CTA Banner -->
+    <section style="background: var(--gold); color: var(--vantablack); padding: 4rem 8%; text-align: center;">
+        <h2 style="font-size: 2.4rem; margin-bottom: 1rem;">Ready for an unforgettable dining experience?</h2>
+        <a href="booking.html" class="cta-button" style="background: #000; color: white;">Book Your Private Chef Date</a>
+    </section>
 
-  <div class="card">
-    <h2>My Focus</h2>
-    <p>Steak, protein-rich meals, and clean ingredient cooking inspired by real-food principles.</p>
-  </div>
-
-</section>
-
-<footer>
-  © 2026 ChefZay
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p style="margin-bottom: 1rem;">© Chef Zay • Private Chef • Albuquerque • New Mexico</p>
+        <p style="opacity: 0.6; font-size: 0.95rem;">Serving Albuquerque, Rio Rancho, Corrales, and surrounding areas.</p>
+    </footer>
 
 </body>
 </html>
