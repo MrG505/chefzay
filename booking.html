@@ -1,49 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Booking | ChefZay</title>
-  <link rel="stylesheet" href="Style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Chef Zay | Private Chef New Mexico</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+        
+        .booking-form {
+            max-width: 680px;
+            margin: 4rem auto;
+            background: rgba(255,255,255,0.03);
+            padding: 3.5rem;
+            border: 1px solid rgba(0, 47, 108, 0.4);
+        }
+        
+        form input, form textarea, form select {
+            width: 100%;
+            background: rgba(10,10,10,0.8);
+            border: 1px solid rgba(212,175,55,0.2);
+            color: var(--text);
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        
+        form input:focus, form textarea:focus {
+            outline: none;
+            border-color: var(--gold);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--light-text);
+        }
+        
+        .success-message {
+            display: none;
+            background: rgba(212,175,55,0.1);
+            color: var(--gold);
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+    </style>
 </head>
-
 <body>
 
-<nav>
-  <img src="Chefzaylogo.PNG" class="logo">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="Chefzaylogo.PNG" alt="Chef Zay Logo" style="height: 48px; width: auto;">
+            CHEF ZAY
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Book Now</a>
+        </div>
+    </nav>
 
-  <div>
-    <a href="index.html">Home</a>
-    <a href="menu.html">Menu</a>
-    <a href="about.html">About</a>
-    <a href="booking.html">Booking</a>
-  </div>
-</nav>
+    <!-- Hero -->
+    <section class="hero" style="height: 65vh; background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.85)), url('https://picsum.photos/id/1077/2000/1200') center/cover no-repeat;">
+        <div class="hero-content">
+            <h1 style="font-size: 3.8rem;">Reserve Your Private Chef Experience</h1>
+            <p class="tagline">Premium in-home dining • Steak mastery • New Mexico</p>
+        </div>
+    </section>
 
-<section class="hero">
-  <h1>Book a Private Chef Experience</h1>
-  <p>Fill out the form below and I’ll respond directly through Formspree.</p>
-</section>
+    <!-- Booking Section -->
+    <section class="section">
+        <div class="text-center" style="max-width: 720px; margin: 0 auto 4rem;">
+            <h2>Let's Create Something Exceptional</h2>
+            <p style="font-size: 1.25rem; margin-top: 1.5rem; opacity: 0.9;">
+                Fill out the form below for your private dinner, tasting menu, or weekly meal prep. 
+                Chef Zay personally reviews every inquiry and responds within 24 hours.
+            </p>
+        </div>
 
-<section class="container">
+        <!-- Formspree Form -->
+        <div class="booking-form">
+            <form action="https://formspree.io/f/xabc1234" method="POST">
+                <div>
+                    <label class="form-label">Full Name *</label>
+                    <input type="text" name="name" required>
+                </div>
+                
+                <div>
+                    <label class="form-label">Email Address *</label>
+                    <input type="email" name="email" required>
+                </div>
+                
+                <div>
+                    <label class="form-label">Phone Number</label>
+                    <input type="tel" name="phone">
+                </div>
+                
+                <div>
+                    <label class="form-label">Preferred Date & Time</label>
+                    <input type="datetime-local" name="date">
+                </div>
+                
+                <div>
+                    <label class="form-label">Event Type</label>
+                    <select name="event_type">
+                        <option value="">Select one...</option>
+                        <option value="Private Dinner">In-Home Private Dinner</option>
+                        <option value="Tasting Menu">Signature Tasting Menu</option>
+                        <option value="Meal Prep">Weekly Meal Prep</option>
+                        <option value="Special Occasion">Special Occasion / Celebration</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="form-label">Number of Guests</label>
+                    <input type="number" name="guests" min="1" placeholder="2">
+                </div>
+                
+                <div>
+                    <label class="form-label">Location (City/Area in NM)</label>
+                    <input type="text" name="location" placeholder="Albuquerque, Rio Rancho, Corrales...">
+                </div>
+                
+                <div>
+                    <label class="form-label">Tell me about your vision / dietary preferences / special requests</label>
+                    <textarea name="message" rows="6" placeholder="Steak preferences, occasion details, etc."></textarea>
+                </div>
+                
+                <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem; font-size: 1.15rem;">
+                    SUBMIT BOOKING REQUEST
+                </button>
+            </form>
+            
+            <div class="success-message" id="success">
+                Thank you. Chef Zay will contact you shortly to confirm details.
+            </div>
+        </div>
+    </section>
 
-  <div class="card">
+    <!-- Process -->
+    <section class="section section-dark">
+        <div class="text-center">
+            <h2>How It Works</h2>
+        </div>
+        <div class="services-grid" style="margin-top: 4rem;">
+            <div class="service-card">
+                <h3>1. Inquiry</h3>
+                <p>Submit details. Chef reviews personally.</p>
+            </div>
+            <div class="service-card">
+                <h3>2. Consultation</h3>
+                <p>Custom menu planning and quote within 24h.</p>
+            </div>
+            <div class="service-card">
+                <h3>3. Experience</h3>
+                <p>Premium ingredients, flawless execution, unforgettable night.</p>
+            </div>
+        </div>
+    </section>
 
-    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+    <!-- Final CTA -->
+    <section style="background: var(--gold); color: var(--vantablack); padding: 5rem 8%; text-align: center;">
+        <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Expect excellence. Book today.</h2>
+        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem;">Limited dates available each month.</p>
+        <a href="menu.html" class="cta-button" style="background: #000; color: white;">View Signature Menus</a>
+    </section>
 
-      <input type="text" name="name" placeholder="Name" required>
-      <input type="email" name="email" placeholder="Email" required>
-      <textarea name="message" placeholder="What would you like cooked?" required></textarea>
+    <!-- Footer -->
+    <footer>
+        <p style="margin-bottom: 1rem;">© Chef Zay • Private Chef • Albuquerque • New Mexico</p>
+        <p style="opacity: 0.6; font-size: 0.95rem;">Serving Albuquerque, Rio Rancho, Corrales, and surrounding areas.</p>
+    </footer>
 
-      <button class="btn" type="submit">Send Booking Request</button>
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = `
+            <span></span>
+            <span></span>
+            <span></span>
+        `;
+        document.querySelector('.navbar').appendChild(hamburger);
 
-    </form>
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'mobile-menu';
+        mobileMenu.innerHTML = `
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Book Now</a>
+        `;
+        document.body.appendChild(mobileMenu);
 
-  </div>
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const spans = hamburger.querySelectorAll('span');
+            spans[0].style.transform = mobileMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : '';
+            spans[1].style.opacity = mobileMenu.classList.contains('active') ? '0' : '1';
+            spans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : '';
+        });
 
-</section>
-
-<footer>
-  © 2026 ChefZay
-</footer>
+        // Form success
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function() {
+            setTimeout(() => {
+                document.getElementById('success').style.display = 'block';
+            }, 800);
+        });
+    </script>
 
 </body>
 </html>
