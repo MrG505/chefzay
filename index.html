@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chef Zay - Albuquerque Private Chef. Local grass-fed steaks, animal-based performance dining, and unforgettable in-home experiences.">
     <title>Chef Zay | Private Chef Albuquerque & New Mexico</title>
     <link rel="stylesheet" href="Style.css">
     <style>
@@ -29,7 +30,7 @@
     <section class="hero">
         <div class="hero-content">
             <h1>Private Chef Experiences</h1>
-            <p class="tagline">Elevated steak-forward cuisine. Performance nutrition. Unforgettable dinners in New Mexico.</p>
+            <p class="tagline">Local Grass-Fed Steaks • Sous Vide + Flame Grill + Butter Basted • Animal-Based Performance Dining in New Mexico</p>
             <a href="booking.html" class="cta-button">Reserve Your Private Dinner</a>
         </div>
     </section>
@@ -39,32 +40,59 @@
         <div class="text-center" style="max-width: 780px; margin: 0 auto;">
             <h2>Precision. Craft. Performance.</h2>
             <p style="font-size: 1.25rem; margin-top: 2rem; opacity: 0.85;">
-                Chef Zay delivers restaurant-quality, steak-centric private dining rooted in clean, high-protein whole food cooking. 
-                Every dish is prepared from scratch with exacting attention to flavor, texture, and nutritional impact.
+                Chef Zay brings restaurant-quality, steak-forward private dining rooted in clean, high-protein animal-based cooking. 
+                Every dish is prepared from scratch using local Albuquerque sources and exacting technique.
             </p>
-            <a href="Animal Base Diet Blue Print.pdf" target="_blank" style="color: var(--gold); margin-top: 2rem; display: inline-block; text-decoration: underline;">Download the Nutrition Philosophy →</a>
+            <a href="Animal Base Diet Blue Print.pdf" target="_blank" style="color: var(--gold); margin-top: 2rem; display: inline-block; text-decoration: underline;">Download the Animal-Based Guide →</a>
+        </div>
+    </section>
+
+    <!-- Signature Dishes -->
+    <section class="section section-dark">
+        <div class="text-center">
+            <h2>Signature Offerings</h2>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <img src="Animal Base Dinner ex.1.png" alt="Signature Steak" style="width: 100%; height: 240px; object-fit: cover; margin-bottom: 1.5rem; border: 1px solid rgba(212,175,55,0.2);">
+                <h3>Grass-Fed Steak Experiences</h3>
+                <p>Sous vide, flame grilled, and butter basted ribeye or tomahawk from Sweet Mercy Farms, No Bull Prime, MAS Cattle, or Nelson Meats.</p>
+                <strong style="color: var(--gold);">Signature</strong>
+            </div>
+            <div class="service-card">
+                <img src="Animal Base Lunch ex.1.png" alt="Rainbow Trout" style="width: 100%; height: 240px; object-fit: cover; margin-bottom: 1.5rem; border: 1px solid rgba(212,175,55,0.2);">
+                <h3>Lemon Pepper Butter Rainbow Trout</h3>
+                <p>Killer fresh trout finished with zesty lemon pepper compound butter — a client favorite.</p>
+                <strong style="color: var(--gold);">Signature</strong>
+            </div>
+            <div class="service-card">
+                <img src="Animal Base Breakfast ex.1.png" alt="Meal Prep" style="width: 100%; height: 240px; object-fit: cover; margin-bottom: 1.5rem; border: 1px solid rgba(212,175,55,0.2);">
+                <h3>Weekly Performance Meal Prep</h3>
+                <p>Consistent animal-based meals using local grass-fed proteins and farmers market ingredients.</p>
+                <strong style="color: var(--gold);">Custom</strong>
+            </div>
         </div>
     </section>
 
     <!-- Services -->
-    <section class="section section-dark">
+    <section class="section">
         <div class="text-center">
             <h2>Private Chef Services</h2>
         </div>
         <div class="services-grid">
             <div class="service-card">
                 <h3>In-Home Private Dinners</h3>
-                <p style="margin: 1.5rem 0;">Multi-course tasting menus brought directly to your home, villa, or event space. Perfect for date nights, celebrations, and intimate gatherings.</p>
+                <p>Multi-course animal-based tasting menus brought to your home. Perfect for date nights and celebrations.</p>
                 <strong style="color: var(--gold);">Starting at $225 per person</strong>
             </div>
             <div class="service-card">
-                <h3>Signature Steak Experiences</h3>
-                <p style="margin: 1.5rem 0;">Dry-aged ribeyes, wagyu, and chef’s choice cuts prepared with precision. Paired with elevated sides and wine recommendations.</p>
-                <strong style="color: var(--gold);">Signature offering</strong>
+                <h3>Signature Steak & Seafood</h3>
+                <p>Grass-fed ribeyes, tomahawks, and Lemon Pepper Rainbow Trout prepared with precision.</p>
+                <strong style="color: var(--gold);">Local Sourced</strong>
             </div>
             <div class="service-card">
                 <h3>Weekly Meal Prep</h3>
-                <p style="margin: 1.5rem 0;">High-performance meals designed for busy professionals and athletes. Consistent, chef-crafted nutrition delivered weekly.</p>
+                <p>High-performance animal-based meals designed for strength and convenience.</p>
                 <strong style="color: var(--gold);">Custom plans available</strong>
             </div>
         </div>
@@ -81,6 +109,32 @@
         <p style="margin-bottom: 1rem;">© Chef Zay • Private Chef • Albuquerque • New Mexico</p>
         <p style="opacity: 0.6; font-size: 0.95rem;">Serving Albuquerque, Rio Rancho, Corrales, and surrounding areas.</p>
     </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = `<span></span><span></span><span></span>`;
+        document.querySelector('.navbar').appendChild(hamburger);
+
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'mobile-menu';
+        mobileMenu.innerHTML = `
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Book Now</a>
+        `;
+        document.body.appendChild(mobileMenu);
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const spans = hamburger.querySelectorAll('span');
+            spans[0].style.transform = mobileMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : '';
+            spans[1].style.opacity = mobileMenu.classList.contains('active') ? '0' : '1';
+            spans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : '';
+        });
+    </script>
 
 </body>
 </html>
