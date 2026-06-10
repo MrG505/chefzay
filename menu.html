@@ -47,7 +47,6 @@
 </head>
 <body>
 
-    <!-- Navbar (same as before) -->
     <nav class="navbar">
         <div class="logo">
             <img src="Chefzaylogo.PNG" alt="Chef Zay Logo" style="height: 48px; width: auto;">
@@ -61,7 +60,6 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <section class="hero" style="height: 65vh; background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.85)), url('https://picsum.photos/id/1080/2000/1200') center/cover no-repeat;">
         <div class="hero-content">
             <h1 style="font-size: 4rem;">Signature Menus</h1>
@@ -69,36 +67,34 @@
         </div>
     </section>
 
-    <!-- Sourcing -->
     <section class="section">
         <div class="text-center" style="max-width: 760px; margin: 0 auto;">
             <h2>Local Albuquerque Sourcing</h2>
             <p style="font-size: 1.2rem; margin-top: 2rem; opacity: 0.9;">
                 Grass-fed beef from Sweet Mercy Farms, No Bull Prime Meats, MAS Cattle Company, and Nelson Meats. 
-                Fruits from Albuquerque farmers markets and organic suppliers. Steaks sous vide, flame grilled, butter basted.
+                Fruits from Albuquerque farmers markets. Steaks sous vide, flame grilled, butter basted.
             </p>
             <a href="Animal Base Diet Blue Print.pdf" target="_blank" style="color: var(--gold); margin-top: 2rem; display: inline-block; text-decoration: underline;">Download the Animal-Based Guide →</a>
         </div>
     </section>
 
-    <!-- Featured Dishes -->
     <section class="section section-dark">
         <h2 class="text-center">Signature Animal-Based Plates</h2>
         <div class="menu-grid">
             <div class="menu-item">
-                <img src="Animal%20Base%20Breakfast%20ex.1.png" alt="Animal-Based Breakfast" class="dish-image">
+                <img src="Animal%20Base%20Breakfast%20ex.1.PNG" alt="Animal-Based Breakfast" class="dish-image">
                 <h3>Animal-Based Breakfast</h3>
                 <p>Grass-fed ribeye or eggs, bone broth, raw honey, farmers market fruit. Butter basted.</p>
                 <div class="price">Market Price</div>
             </div>
             <div class="menu-item">
-                <img src="Animal%20Base%20Lunch%20ex.1.png" alt="Animal-Based Lunch" class="dish-image">
+                <img src="Animal%20Base%20Lunch%20ex.1.PNG" alt="Animal-Based Lunch" class="dish-image">
                 <h3>Animal-Based Lunch</h3>
                 <p>Local grass-fed steak, organ meats, approved sides. Special compound butter.</p>
                 <div class="price">Market Price</div>
             </div>
             <div class="menu-item">
-                <img src="Animal%20Base%20Dinner%20ex.1.png" alt="Animal-Based Dinner" class="dish-image">
+                <img src="Animal%20Base%20Dinner%20ex.1.PNG" alt="Animal-Based Dinner" class="dish-image">
                 <h3>Animal-Based Dinner</h3>
                 <p>Tomahawk or ribeye, sous vide + flame grilled + butter basted. Lemon Pepper Trout option.</p>
                 <div class="price">Market Price</div>
@@ -106,8 +102,38 @@
         </div>
     </section>
 
-    <!-- Rest of menu (Signature Steaks, Tasting, Meal Prep, CTA, Footer, Mobile Script) - same as previous version I sent -->
-    <!-- ... (use the full menu.html from my last response and just swap the image srcs) ... -->
+    <!-- Add the rest of your previous menu content (Signature Steaks, Tasting Menu, Meal Prep, CTA, Footer, Mobile Script) here if you want the full page. For now this fixes the images. -->
+
+    <footer>
+        <p style="margin-bottom: 1rem;">© Chef Zay • Private Chef • Albuquerque • New Mexico</p>
+        <p style="opacity: 0.6; font-size: 0.95rem;">Serving Albuquerque, Rio Rancho, Corrales, and surrounding areas.</p>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const hamburger = document.createElement('div');
+        hamburger.className = 'hamburger';
+        hamburger.innerHTML = `<span></span><span></span><span></span>`;
+        document.querySelector('.navbar').appendChild(hamburger);
+
+        const mobileMenu = document.createElement('div');
+        mobileMenu.className = 'mobile-menu';
+        mobileMenu.innerHTML = `
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="menu.html">Menu</a>
+            <a href="booking.html">Book Now</a>
+        `;
+        document.body.appendChild(mobileMenu);
+
+        hamburger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            const spans = hamburger.querySelectorAll('span');
+            spans[0].style.transform = mobileMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : '';
+            spans[1].style.opacity = mobileMenu.classList.contains('active') ? '0' : '1';
+            spans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : '';
+        });
+    </script>
 
 </body>
 </html>
