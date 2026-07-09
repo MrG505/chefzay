@@ -51,7 +51,6 @@
 </head>
 <body>
 
-    <!-- Navbar -->
     <nav class="navbar">
         <div class="logo">
             <img src="Chefzaylogo.PNG" alt="Chef Zay Logo" style="height: 78px; width: auto;">
@@ -65,7 +64,6 @@
         </div>
     </nav>
 
-    <!-- Hero -->
     <section class="hero" style="height: 65vh; background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.85)), url('New%20Mexico%20dinner%20ex3.PNG') center/cover no-repeat;">
         <div class="hero-content">
             <h1 style="font-size: 3.8rem;">Reserve Your Private Chef Experience</h1>
@@ -73,39 +71,33 @@
         </div>
     </section>
 
-    <!-- Booking Section -->
     <section class="section">
         <div class="text-center" style="max-width: 720px; margin: 0 auto 4rem;">
             <h2>Let's Create Something Exceptional</h2>
             <p style="font-size: 1.25rem; margin-top: 1.5rem; opacity: 0.9;">
                 Fill out the form below for your private dinner, tasting menu, or weekly meal prep. 
-                Chef Zay personally reviews every inquiry and responds within 24 hours.
+                Chef Zay personally reviews every inquiry.
             </p>
         </div>
 
-        <!-- Formspree Form -->
         <div class="booking-form">
             <form action="https://formspree.io/f/mpqedzwn" method="POST">
                 <div>
                     <label class="form-label">Full Name *</label>
                     <input type="text" name="name" required>
                 </div>
-                
                 <div>
                     <label class="form-label">Email Address *</label>
                     <input type="email" name="email" required>
                 </div>
-                
                 <div>
                     <label class="form-label">Phone Number</label>
                     <input type="tel" name="phone">
                 </div>
-                
                 <div>
                     <label class="form-label">Preferred Date & Time</label>
                     <input type="datetime-local" name="date">
                 </div>
-                
                 <div>
                     <label class="form-label">Event Type</label>
                     <select name="event_type">
@@ -117,34 +109,28 @@
                         <option value="Other">Other</option>
                     </select>
                 </div>
-                
                 <div>
                     <label class="form-label">Number of Guests</label>
                     <input type="number" name="guests" min="1" placeholder="2">
                 </div>
-                
                 <div>
                     <label class="form-label">Location (City/Area in NM)</label>
                     <input type="text" name="location" placeholder="Albuquerque, Rio Rancho, Corrales...">
                 </div>
-                
                 <div>
                     <label class="form-label">Tell me about your vision / dietary preferences / special requests</label>
                     <textarea name="message" rows="6" placeholder="Steak preferences, sous vide, butter basting, local sourcing, etc."></textarea>
                 </div>
-                
                 <button type="submit" class="cta-button" style="width: 100%; margin-top: 1rem; font-size: 1.15rem;">
                     SUBMIT BOOKING REQUEST
                 </button>
             </form>
-            
             <div class="success-message" id="success">
-                Thank you. Chef Zay will contact you shortly to confirm details.
+                Thank you. Chef Zay will contact you shortly.
             </div>
         </div>
     </section>
 
-    <!-- Process -->
     <section class="section section-dark">
         <div class="text-center">
             <h2>How It Works</h2>
@@ -160,25 +146,21 @@
             </div>
             <div class="service-card">
                 <h3>3. Experience</h3>
-                <p>Premium local ingredients, sous vide + flame grill + butter basted steaks, unforgettable night.</p>
+                <p>Premium local ingredients, sous vide + flame grill + butter basted steaks.</p>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA -->
     <section style="background: var(--gold); color: var(--vantablack); padding: 5rem 8%; text-align: center;">
         <h2 style="font-size: 2.5rem; margin-bottom: 1.5rem;">Expect excellence. Book today.</h2>
-        <p style="font-size: 1.2rem; max-width: 600px; margin: 0 auto 2rem;">Limited dates available each month.</p>
         <a href="menu.html" class="cta-button" style="background: #000; color: white;">View Signature Menus</a>
     </section>
 
-    <!-- Footer -->
     <footer>
         <p style="margin-bottom: 1rem;">© Chef Zay • Private Chef • Albuquerque • New Mexico</p>
         <p style="opacity: 0.6; font-size: 0.95rem;">Serving Albuquerque, Rio Rancho, Corrales, and surrounding areas.</p>
     </footer>
 
-    <!-- Mobile Menu Script -->
     <script>
         const hamburger = document.createElement('div');
         hamburger.className = 'hamburger';
@@ -203,7 +185,6 @@
             spans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : '';
         });
 
-        // Form success
         const form = document.querySelector('form');
         form.addEventListener('submit', function() {
             setTimeout(() => {
@@ -211,6 +192,5 @@
             }, 800);
         });
     </script>
-
 </body>
 </html>
