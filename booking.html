@@ -62,7 +62,19 @@
             <a href="menu.html">Menu</a>
             <a href="booking.html">Book Now</a>
         </div>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="booking.html">Book Now</a>
+    </div>
 
     <section class="hero" style="height: 65vh; background: linear-gradient(rgba(10,10,10,0.8), rgba(10,10,10,0.85)), url('New%20Mexico%20dinner%20ex3.PNG') center/cover no-repeat;">
         <div class="hero-content">
@@ -162,34 +174,11 @@
     </footer>
 
     <script>
-        const hamburger = document.createElement('div');
-        hamburger.className = 'hamburger';
-        hamburger.innerHTML = `<span></span><span></span><span></span>`;
-        document.querySelector('.navbar').appendChild(hamburger);
-
-        const mobileMenu = document.createElement('div');
-        mobileMenu.className = 'mobile-menu';
-        mobileMenu.innerHTML = `
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="menu.html">Menu</a>
-            <a href="booking.html">Book Now</a>
-        `;
-        document.body.appendChild(mobileMenu);
-
+        const hamburger = document.querySelector('.hamburger');
+        const mobileMenu = document.getElementById('mobileMenu');
         hamburger.addEventListener('click', () => {
             mobileMenu.classList.toggle('active');
-            const spans = hamburger.querySelectorAll('span');
-            spans[0].style.transform = mobileMenu.classList.contains('active') ? 'rotate(45deg) translate(5px, 5px)' : '';
-            spans[1].style.opacity = mobileMenu.classList.contains('active') ? '0' : '1';
-            spans[2].style.transform = mobileMenu.classList.contains('active') ? 'rotate(-45deg) translate(7px, -6px)' : '';
-        });
-
-        const form = document.querySelector('form');
-        form.addEventListener('submit', function() {
-            setTimeout(() => {
-                document.getElementById('success').style.display = 'block';
-            }, 800);
+            hamburger.classList.toggle('active');
         });
     </script>
 </body>
