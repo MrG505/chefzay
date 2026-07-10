@@ -65,7 +65,7 @@ a { color: inherit; text-decoration: none; }
 
 .nav-links a:hover { color: var(--gold); }
 
-/* Mobile Hamburger */
+/* Hamburger */
 .hamburger {
     display: none;
     flex-direction: column;
@@ -77,6 +77,15 @@ a { color: inherit; text-decoration: none; }
     height: 3px;
     background: var(--gold);
     transition: all 0.3s;
+}
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
 
 .mobile-menu {
@@ -92,6 +101,9 @@ a { color: inherit; text-decoration: none; }
     font-size: 1.3rem;
     z-index: 999;
     border-top: 1px solid rgba(0, 47, 108, 0.3);
+}
+.mobile-menu.active {
+    display: flex;
 }
 
 .hero {
@@ -154,7 +166,7 @@ footer {
     border-top: 1px solid rgba(0, 47, 108, 0.3);
 }
 
-/* Mobile Responsiveness */
+/* Mobile */
 @media (max-width: 768px) {
     h1 { font-size: 3.2rem; }
     h2 { font-size: 2.2rem; }
